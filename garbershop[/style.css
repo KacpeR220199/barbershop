@@ -1,0 +1,210 @@
+body {
+    background-color: #171717;
+    color: #f5f0e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 30px;
+}
+h1 {
+    color: #c8a96b;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px dashed #c8a96b;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: #f5f0e8;
+}
+nav a:hover {
+    color: #c8a96b;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main section {
+    background-color: #222;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px 0px rgba(34,34,34,1);
+    border: 1px solid #c8a96b;
+}
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+span {
+    font-weight: bold;
+    color: #c8a96b;
+}
+span:hover {
+    color: #f5f0e8;
+}
+section:hover {
+    background-color: #2b2b2b;   
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.4);
+}
+button{
+    background-color: #c8a96b;
+    color: #171717;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+    border: 2px solid #a8874f;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px 70px;
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.2);
+}
+button:hover{
+    background-color: #e2c58b;
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.4);
+    cursor: pointer;
+}
+button:active{
+    background-color: #a8874f;
+    transform: scale(0.90);
+}
+.o-nas{
+    background-image: url('images/o-nas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o-nas-text{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(23,23,23,0.5);
+    border: 1px solid #c8a96b;
+    text-align: center;
+    margin: 20px;
+    width: 30em;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#oferta{
+    text-align: center;
+}
+.oferty{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.oferty li:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.4);
+
+}
+.oferty li{
+    width: 10em;
+    margin: 15px ;
+    padding: 10px;
+    background-color: #121212;
+    border-radius: 8px;
+    border: 1px solid #c8a96b;
+    transition: transform 0.4s ease;
+}
+h2{
+    color: #c8a96b;
+    padding: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+.oferty p{
+    color: antiquewhite;
+    padding:10px;
+    max-width: 65ch;
+}
+.oferty span{
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px dashed #a8874f ;
+}
+.ceny{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.ceny li{
+    background-color: #121212;
+    border-radius: 8px;
+    border: 1px solid #c8a96b;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ceny li:hover{
+    transform: scale(1.07);
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.4);
+}
+.kontakty{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.kontakty li{
+    background-color: #121212;
+    margin: 10px;
+    padding: 10px ;
+    border-radius: 8px;
+    border: 1px solid #c8a96b;
+    
+    transition: transform 0.4s ease;
+}
+.kontakty li:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0px rgba(252,202,81,0.4);
+}
+/*width--600px*/
+
+@media screen and (max-width: 600px) {
+    nav ul{
+        flex-direction:column;
+        gap: 15px;
+        align-items: center;
+        padding: 0;
+    }
+    button{
+        padding: 20px 35px;
+    }
+    main section{
+        padding: 15px;
+    }
+    .oferty{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 601px){
+    .oferty li{
+        width: 10em;
+        margin: 5px ;
+        padding: 10px;
+    }
+}
